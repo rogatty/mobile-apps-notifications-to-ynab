@@ -1,12 +1,12 @@
 {
   "name": "mobile-apps-notifications-to-ynab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Add YNAB transactions based on banking mobile apps' notifications",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Igor Rogatty (https://github.com/rogatty)",
   "license": "MIT",
   "dependencies": {
     "ynab": "^1.21.0"
