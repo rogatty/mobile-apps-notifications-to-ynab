@@ -1,5 +1,6 @@
 const mbank = require('./mbank');
 const citibank = require('./citibank');
+const revolut = require('./revolut');
 const {sendToYnab} = require('./ynab');
 
 async function run() {
@@ -18,6 +19,8 @@ async function run() {
         transaction = mbank.parse(notificationTitle, notificationMessage);
     } else if (account === 'citibank') {
         transaction = citibank.parse(notificationTitle, notificationMessage);
+    } else if (account === 'revolut') {
+        transaction = revolut.parse(notificationTitle, notificationMessage);
     } else {
         throw new Error(`Unsupported account: ${account}`);
     }
@@ -32,5 +35,5 @@ async function run() {
 
 run().catch((e) => {
    console.log(e);
-   throw e;	
+   throw e;
 });

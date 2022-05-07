@@ -22,7 +22,7 @@
     You can pass `1` as an additional argument to run in dry mode which does the parsing but skips the YNAB API request.
 
 ## How to run the script automatically
-1. Install https://play.google.com/store/apps/details?id=pl.mbank or https://play.google.com/store/apps/details?id=com.konylabs.cbplpat
+1. Install https://play.google.com/store/apps/details?id=pl.mbank, https://play.google.com/store/apps/details?id=com.konylabs.cbplpat or https://play.google.com/store/apps/details?id=com.revolut.revolut.
 2. Enable mobile app notifications for all transactions.
 3. Find a way to pass these notifications to this script. I use https://play.google.com/store/apps/details?id=com.llamalab.automate, https://f-droid.org/packages/com.termux/ and https://f-droid.org/packages/com.termux.tasker/ with Node.js running on my phone.
 
