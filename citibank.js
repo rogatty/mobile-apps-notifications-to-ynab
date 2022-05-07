@@ -61,7 +61,8 @@ function parse(title, message) {
         return parseOutgoingTransfer(message);
     }
 
-    throw new Error(`Unknown notification title: ${title}`);
+    console.log(`Unknown notification title: ${title}`);
+    return null;
 }
 
 module.exports = {

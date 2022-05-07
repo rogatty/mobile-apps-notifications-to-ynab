@@ -83,11 +83,8 @@ function parse(title, message) {
         return parseIncomingTransfer(message);
     }
 
-    if (['Transakcja BLIK', 'Mobilna autoryzacja'].includes(title)) {
-        return null;
-    }
-
-    throw new Error(`Unknown notification title: ${title}`);
+    console.log(`Unknown notification title: ${title}`);
+    return null;
 }
 
 module.exports = {

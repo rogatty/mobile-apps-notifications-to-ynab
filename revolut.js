@@ -33,7 +33,8 @@ function parse(title, message) {
         return parsePayment(title, message);
     }
 
-    throw new Error(`Unknown notification message: ${message}`);
+    console.log(`Unknown notification message: ${message}`);
+    return null;
 }
 
 module.exports = {
